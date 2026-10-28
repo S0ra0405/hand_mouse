@@ -105,7 +105,7 @@ def main():
     previous_zoom_distance = 0.0
     waiting_for_fingers_to_open = False
 
-    with vision.HandLandmarker.create_from_options(options) as detector:
+    with vision.HandLandmarker.create_from_options(options) as detector:    
         try:
             while True:
                 ok, frame = camera.read()
